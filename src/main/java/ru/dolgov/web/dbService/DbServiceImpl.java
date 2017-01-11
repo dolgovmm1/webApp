@@ -20,7 +20,7 @@ import java.sql.SQLException;
  */
 public class DbServiceImpl implements DbService{
     private static final String HIBERNATE_SHOW_SQL = "true";
-    private static final String HIBERNATE_HBM2DDL_AUTO = "create";
+    private static final String HIBERNATE_HBM2DDL_AUTO = "update";
 
     private final SessionFactory sessionFactory;
 

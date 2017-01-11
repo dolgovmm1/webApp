@@ -8,13 +8,10 @@ import org.eclipse.jetty.server.handler.HandlerList;
 import org.eclipse.jetty.server.handler.ResourceHandler;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
-import ru.dolgov.web.AccountServer.AccountServer;
-import ru.dolgov.web.AccountServer.AccountServerController;
-import ru.dolgov.web.AccountServer.AccountServerControllerMBean;
-import ru.dolgov.web.AccountServer.AccountServerImpl;
+import ru.dolgov.web.AccountServer.*;
 import ru.dolgov.web.dbService.DbService;
 import ru.dolgov.web.dbService.DbServiceImpl;
-import ru.dolgov.web.resources.TestResources;
+import resources.TestResource;
 import ru.dolgov.web.servlets.*;
 
 import javax.management.MBeanServer;
@@ -47,7 +44,7 @@ public class Main {
         context.addServlet(new ServletHolder(new SignUpServlet(dbService)), SignUpServlet.PAGE_URL);
         context.addServlet(new ServletHolder(new SignInServlet(dbService)), SignInServlet.PAGE_URL);
         context.addServlet(new ServletHolder(new AdminPageServlet(accountServer)), AdminPageServlet.PAGE_URL);
-        context.addServlet(new ServletHolder(new ResourcesServlet(new TestResources())), ResourcesServlet.PAGE_URL);
+        context.addServlet(new ServletHolder(new ResourcesServlet(new TestResource())), ResourcesServlet.PAGE_URL);
         log.debug("Adding servlets into handler");
 
         ResourceHandler resource_handler = new ResourceHandler();
