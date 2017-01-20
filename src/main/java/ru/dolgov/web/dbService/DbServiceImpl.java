@@ -15,7 +15,8 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 /**
- * BigComp
+ * Class implement mechanism work with database over Hibernate
+ * @author M. Dolgov
  * 04.01.2017.
  */
 public class DbServiceImpl implements DbService{
@@ -32,7 +33,6 @@ public class DbServiceImpl implements DbService{
     private Configuration getMySqlConfiguration(){
         Configuration configuration = new Configuration();
         configuration.addAnnotatedClass(UserDataSet.class);
-
         configuration.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQLDialect");
         configuration.setProperty("hibernate.connection.driver_class", "com.mysql.jdbc.Driver");
         configuration.setProperty("hibernate.connection.url", "jdbc:mysql://localhost:3306/db_example");

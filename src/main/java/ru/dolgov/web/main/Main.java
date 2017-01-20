@@ -19,7 +19,7 @@ import javax.management.ObjectName;
 import java.lang.management.ManagementFactory;
 
 /**
- * Dolgov
+ * @author M. Dolgov
  * 02.01.2017.
  */
 public class Main {

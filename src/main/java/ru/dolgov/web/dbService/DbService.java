@@ -3,7 +3,8 @@ package ru.dolgov.web.dbService;
 import ru.dolgov.web.dbService.dataSet.UserDataSet;
 
 /**
- * BigComp
+ * Interface for work with database over Hibernate
+ * @author M. Dolgov
  * 04.01.2017.
  */
 public interface DbService{

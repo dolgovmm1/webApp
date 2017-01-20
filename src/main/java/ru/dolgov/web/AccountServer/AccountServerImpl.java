@@ -1,7 +1,8 @@
 package ru.dolgov.web.AccountServer;
 
 /**
- * BigComp
+ * Class implement mechanism for work with counter logged users and setting users limit
+ * @author M. Dolgov
  * 07.01.2017.
  */
 public class AccountServerImpl implements AccountServer {

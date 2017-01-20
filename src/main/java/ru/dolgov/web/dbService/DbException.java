@@ -1,7 +1,8 @@
 package ru.dolgov.web.dbService;
 
 /**
- * BigComp
+ * Wrapper Hibernate exception
+ * @author M. Dolgov
  * 04.01.2017.
  */
 public class DbException extends Exception{

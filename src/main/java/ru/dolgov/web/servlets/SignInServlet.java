@@ -12,7 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Dolgov
+ * Servlet for signIn User with login adn password. Login and password getting from DataBase over Hibernate
+ * @author M. Dolgov
  * 02.01.2017.
  */
 public class SignInServlet extends HttpServlet{

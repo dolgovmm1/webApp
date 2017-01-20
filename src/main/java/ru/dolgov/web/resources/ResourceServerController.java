@@ -1,8 +1,9 @@
-package ru.dolgov.web.AccountServer;
+package ru.dolgov.web.resources;
 
-import resources.TestResource;
+import ru.dolgov.web.resources.TestResources;
 
 /**
+ * Class implrement getting fields TestResource in MBean jconsole
  * @author M. Dolgov
  * 11.01.2017.
  */

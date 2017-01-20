@@ -4,7 +4,8 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 /**
- * BigComp
+ * Class for work with database.
+ * This class described table Users in database
  * @author Dolgov
  * 04.01.2017.
  */

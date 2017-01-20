@@ -1,7 +1,8 @@
 package resources;
 
 /**
- * BigComp
+ * TestResource class for
+ * @author M. Dolgov
  * 09.01.2017.
  */
 public class TestResource {

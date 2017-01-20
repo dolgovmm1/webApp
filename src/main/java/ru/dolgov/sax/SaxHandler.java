@@ -6,7 +6,8 @@ import org.xml.sax.helpers.DefaultHandler;
 import ru.dolgov.sax.reflection.ReflectionHelper;
 
 /**
- * BigComp
+ * Class describe parsing xml file
+ * @author M. Dolgov
  * 11.01.2017.
  */
 public class SaxHandler extends DefaultHandler {

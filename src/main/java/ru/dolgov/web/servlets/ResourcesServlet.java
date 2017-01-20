@@ -16,7 +16,9 @@ import java.io.IOException;
 import java.lang.management.ManagementFactory;
 
 /**
- * BigComp
+ * Servlet for work with SaxParser. Name xml file getting from request parameter "path".
+ * After parse xml file creating object and getting to they fields with assistance MBean controller
+ * @author M. Dolgov
  * 09.01.2017.
  */
 public class ResourcesServlet extends HttpServlet{
@@ -49,7 +51,8 @@ public class ResourcesServlet extends HttpServlet{
             e.printStackTrace();
         } catch (SAXException e) {
             e.printStackTrace();
-        }catch (MalformedObjectNameException | InstanceAlreadyExistsException | MBeanRegistrationException | NotCompliantMBeanException ex){
+        }catch (MalformedObjectNameException | InstanceAlreadyExistsException |
+                MBeanRegistrationException | NotCompliantMBeanException ex){
             ex.printStackTrace();
         }
         if (resource != null){

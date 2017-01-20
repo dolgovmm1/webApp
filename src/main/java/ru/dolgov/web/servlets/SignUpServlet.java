@@ -11,7 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Dolgov
+ * Servlet to registration user. Login and password saved in DataBase over Hibernate
+ * @author M. Dolgov
  * 02.01.2017.
  */
 public class SignUpServlet extends HttpServlet {
@@ -40,12 +41,12 @@ public class SignUpServlet extends HttpServlet {
                 }
             } catch (DbException ex) {
                 System.out.println("Error get user by login " + ex.getMessage());
+                //todo: add logging
             }
             response.setContentType("text/html;charset=utf-8");
             response.getWriter().println("this login already exist");
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             return;
-
         }
     }
 }

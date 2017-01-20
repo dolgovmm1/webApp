@@ -7,14 +7,15 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Dolgov
+ * Servlet work with parameters request
+ * @author M. Dolgov
  * 27.12.2016.
  */
 public class Frontend extends HttpServlet{
     public static final String PAGE_URL = "/mirror";
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
-        String pageVariables = request.getParameter("key");
+        String pageVariables = request.getParameter("key");//todo: get all parameters
         response.getWriter().println(pageVariables);
         response.setContentType("text/html");
         response.setStatus(HttpServletResponse.SC_OK);
